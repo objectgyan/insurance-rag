@@ -12,59 +12,51 @@ A Python-based AI-powered assistant that uses RAG (Retrieval-Augmented Generatio
 
 ## Installation
 
-```sh
-# Clone the repository
-git clone <repository-url>
+1. **Clone the repository**
+    ```sh
+    git clone <repository-url>
+    ```
 
-# Create and activate virtual environment
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
+2. **Create and activate virtual environment**
+    - **Linux/Mac**
+        ```sh
+        python -m venv venv
+        source venv/bin/activate
+        ```
+    - **Windows**
+        ```sh
+        python -m venv venv
+        venv\Scripts\activate
+        ```
 
-# Install dependencies
-pip install -r requirements.txt
-```
+3. **Install dependencies**
+    ```sh
+    pip install -r requirements.txt
+    ```
 
 ## Project Structure
-agent
 
- - Core agent components
-
-examples
-
- - Sample documents and usage examples
-
-config
-
- - Configuration files
-
-data
-
- - Vector store data
-   
-cache
-
- - Model and response caching
+- **agent**: Core agent components
+- **examples**: Sample documents and usage examples
+- **config**: Configuration files
+- **data**: Vector store data
+- **cache**: Model and response caching
 
 ## Usage
 
-1. Process sample documents:
-```sh
-python setup_documents.py
-```
+1. **Process sample documents**
+    ```sh
+    python setup_documents.py
+    ```
 
-2. Run interactive test session:
-```sh
-python test_interactive.py
-```
+2. **Run interactive test session**
+    ```sh
+    python test_interactive.py
+    ```
 
 ## Configuration
 
-Edit 
-
-config.yaml
-
- to modify:
+Edit `config.yaml` to modify:
 - LLM settings (model, temperature, etc.)
 - Vector store configuration
 - Document processing parameters
